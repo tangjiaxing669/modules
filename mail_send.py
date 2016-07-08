@@ -110,39 +110,3 @@ class SendMail:
         except Exception as e:
             print('Send Failed: {0}'.format(e))
             sys.exit()
-
-
-
-#if __name__ == '__main__':
-#    HOST = 'smtp.gmail.com'
-#    SUBJECT = 'Test email from Python'
-#    TO = ('1551694017@qq.com', '330547236@qq.com')
-#    FROM = 'jasontom147@gmail.com'
-#    CONTENT = '''<table width="800" border="0" cellspacing="0" cellpadding="4">
-#    <tr>
-#        <td bgcolor="#CECFAD" height="20" style="font-size:14px">* 官网数据 <a href="monitor.domain.com">更多</a></td>
-#    </tr>
-#    <tr>
-#        <td bgcolor="#EFEBDE" height="100" style="font-size:13px">
-#            1) 日访问量: <font color=red>152433</font> 访问次数: 23651 页面浏览量: 45123 点击数: 545122 数据流量: 504Mb<br>
-#            2) 状态码信息<br>
-#            &nbsp;&nbsp;500:105  404:3264  503:214<br>
-#            3) 访客浏览器信息<br>
-#            &nbsp;&nbsp;IE:50%  firefox:10%  chrome:30%  other:10%<br>
-#            4) 页面信息<br>
-#            &nbsp;&nbsp;/index.php 42153<br>
-#            &nbsp;&nbsp;/view.php 21451<br>
-#            &nbsp;&nbsp;/login.php 51112<br>
-#        </td>
-#    </tr>
-#</table>'''
-#    CONTENT_1 = '''Python send information.
-#                access_num 23651
-#                page_num 45123
-#                click_num 545122
-#                data 504Mb
-#                num  3'''
-#    test = SendMail(HOST, 587, FROM, TO, SUBJECT)
-#    test.login_mail(FROM, 'tjb6045011')
-#    test.send_text(CONTENT_1)
-#    test.send()
