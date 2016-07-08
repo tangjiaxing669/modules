@@ -513,7 +513,3 @@ class DefaultMonitor():
                 print(err)
                 sys.exit()
         return zombies
-
-# a = DefaultMonitor()
-# b = a.zombies_info()
-# print(b)
