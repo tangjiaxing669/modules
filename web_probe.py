@@ -106,12 +106,3 @@ class Probe_web:
 
         if os.path.isfile(sys.path[0] + '/PROBE_DATA'):
             os.remove(sys.path[0] + '/PROBE_DATA')
-
-# if __name__ == '__main__':
-#     URL = 'http://www.baidu.com'
-#     probe_url = Probe_web()
-#     probe_url.set_opt(URL)
-#     probe_url.commit()
-#     probe_info = probe_url.get_info()
-#     print('probe_info = > {0}'.format(probe_info))
-#     probe_url.cleanup()
