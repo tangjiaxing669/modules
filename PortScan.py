@@ -63,9 +63,3 @@ class PortScann():
                 for port in self.nm[host][protocol].keys():
                     scan_dict[host]['port'][port] = self.nm[host][protocol][port]
         return scan_dict
-
-
-if __name__ == '__main__':
-    a = PortScann('www.google.com')
-    t1 = a.get_scan()
-    print(t1)
